@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(8, 1, 30);
+}
+
+nav {
+    height: 100px;
+    display: flex;
+    background: image();
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 50px;
+    margin-top: 40px;
+    color: beige;
+    padding-bottom: 50px;
+    font-size: 25px;
+}
+
+
+ul {
+    display: flex;
+}
+
+ul li {
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    transition: 0.5s;
+    position: relative;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+nav ul li a span {
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    border-radius: 40px;
+    transform: scale(0);
+    transition: .2s;
+}
+
+nav ul li a:hover span,
+nav ul li a.active span {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.btn {
+    margin-right: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    text-decoration: none;
+    color: black;
+}
+
+.btn:hover {
+    color: rgb(0, 106, 255);
+    background: #00f2ff;
+}
+
+header h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    color: white;
+}
+
+main {
+    display: flex;
+    margin: 50px 100px;
+}
+
+header h1 i {
+    letter-spacing: 15px;
+}
+
+i {
+    letter-spacing: 7px;
+}
+
+section {
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    padding: 40px;
+    margin: 20px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+section h2 {
+    margin: 25px 0;
+}
+
+img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 270px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+section.firstact img {
+    padding: 115px 0;
+}
+
+section.secondact img {
+    padding: 78px 0;
+}
+
+section.forthact img {
+    width: 243px;
+    margin: auto;
+}
+
+section.fifthact img {
+    padding: 80px 0;
+}
+
+
+section.sixthact img {
+    padding: 90px 0;
+}
+
+img:hover {
+    display: none;
+}
+
+section p {
+    margin: 20px 0;
+}
